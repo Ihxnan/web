@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的中国梦</title>
+    <style>
+        /* 基础样式重置和全局设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        /* 标题样式 */
+        header {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* 个人信息样式 */
+        .personal-info {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .info-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #34495e;
+            font-size: 1.1rem;
+        }
+
+        dd {
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .id-photo {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #ecf0f1;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 内容样式 */
+        .content {
+            margin-bottom: 40px;
+        }
+
+        p {
+            text-indent: 2em;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #34495e;
+            line-height: 1.8;
+        }
+
+        .dream-image {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 8px;
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 列表样式 */
+        .points {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .points li {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .points li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .points li strong {
+            display: block;
+            font-size: 1.4rem;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-family: "黑体", sans-serif;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .personal-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            dl {
+                grid-template-columns: 1fr;
+                text-align: left;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .points li strong {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>我的中国梦</h1>
+    </header>
+
+    <section class="personal-info">
+        <div class="info-details">
+            <dl>
+                <dt>姓名</dt>
+                <dd>方长安</dd>
+                <dt>学号</dt>
+                <dd>2024204171</dd>
+                <dt>学校</dt>
+                <dd>青岛大学</dd>
+                <dt>专业</dt>
+                <dd>计算机科学与技术</dd>
+                <dt>证件照</dt>
+                <dd><img src="img/证件照.webp" alt="方长安的证件照" title="证件照" class="id-photo"></dd>
+            </dl>
+        </div>
+    </section>
+
+    <section class="content">
+        <p>
+            每个人都有自己的梦想，每个民族也都有自己的梦想。习近平总书记指出，实现中华民族伟大复兴，就是中华民族近代以来最伟大的梦想。这个梦想，凝聚了几代中国人的夙愿，体现了中华民族和中国人民的整体利益，是每一个中华儿女的共同期盼。
+        </p>
+        <p>
+            中华民族有着悠久灿烂的文明，长期居于世界文明发展的先进行列。据有关学者测算，直到18世纪末期，中国的经济规模仍是世界上最大的，相当于上个世纪末期美国经济总量在世界经济总量中的比重。但近代以来，在西方坚船利炮的侵略下，中华民族遭受了深重苦难、付出了重大牺牲，辉煌不再，尊严难立，中华儿女也从此开始了百年“中国梦”的辛苦求索、艰难追寻。
+        </p>
+        <p>
+            对近现代中华儿女来说，实现中华民族伟大复兴绝不仅是一句豪言壮语，而是有着十分深刻的内涵，这就是让国家更强盛、人民更幸福，中华民族对世界作出更大贡献。
+        </p>
+
+        <img src="img/我的中国梦.jpg" alt="我的中国梦主题图片" class="dream-image">
+
+        <ul class="points">
+            <li>
+                <strong>国家不富强，就会被人欺侮；民族不复兴，就无颜担当龙的传人。</strong>
+                <p>
+                    实现中华民族伟大复兴，不是简单地重寻昔日的荣光，而是要让曾经饱受列强欺侮、目前尚是发展中国家的中国经济发展、政治昌明、文化繁荣、社会和谐，到本世纪中叶成为富强民主文明和谐的社会主义现代化国家。
+                </p>
+            </li>
+            <li>
+                <strong>强国才能富民，强国也是为了富民。</strong>
+                <p>
+                    没有人民富裕，发展就不算成功；没有人民幸福，复兴就不算完成。实现中华民族伟大复兴，就是要让中国人民有更好的教育、更稳定的工作、更满意的收入、更可靠的社会保障、更高水平的医疗卫生服务、更舒适的居住条件、更优美的环境，让我们的孩子们成长得更好、工作得更好、生活得更好。进一步说，就是要让中国人民过上更加富裕、更有尊严的生活，实现每个人自由而全面的发展。
+                </p>
+            </li>
+            <li>
+                <strong>“中国梦”不仅是属于中国的，也是属于世界的。</strong>
+                <p>
+                    处于伟大复兴进程中的中国，在追求本国利益时兼顾他国合理关切，在谋求本国发展中促进各国共同发展；处于伟大复兴进程中的中国，坚持把本国人民利益同各国人民共同利益结合起来，以更加积极的姿态参与国际事务，共同应对全球性挑战，共同破解人类发展难题。
+                </p>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
